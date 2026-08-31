@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://dotheypass.com/security.html
+    about: Please report security issues privately instead of opening a public issue.
+  - name: Join / collaborator interest
+    url: https://dotheypass.com/join.html
+    about: Introduce yourself if you are interested in helping build Do They Pass.
