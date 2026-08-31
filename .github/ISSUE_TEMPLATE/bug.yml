@@ -1,0 +1,51 @@
+name: Bug / reproducible problem
+description: Report a reproducible problem using synthetic or non-sensitive data.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping. Do not include API keys, preview tokens, private search subjects, sensitive identifiers, or unnecessary personal information.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the behavior you observed.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How can we reproduce it?
+      description: Prefer synthetic examples.
+      placeholder: "1. ...\n2. ...\n3. ..."
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Identity resolution
+        - Search / providers
+        - Frontend / mobile UX
+        - Privacy / redaction
+        - Accessibility
+        - Documentation
+        - Testing
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: safety
+    attributes:
+      label: Privacy or safety impact
+      description: If none is known, say none.
+    validations:
+      required: true
