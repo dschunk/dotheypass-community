@@ -1,0 +1,52 @@
+name: Feature / design proposal
+description: Suggest an improvement to the product, resolver, UX, privacy, testing, or contributor tooling.
+title: "[Proposal] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Proposals involving personal data must explain privacy, safety, and false-match tradeoffs. Features that enable stalking, doxxing, precise-location lookup, opaque character scoring, or regulated eligibility screening are out of scope.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed approach
+      description: Explain the smallest useful version first.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: How would we know it works?
+      description: Include suggested tests, synthetic fixtures, UX validation, or measurable outcomes.
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Privacy, safety, false-match, or abuse risks
+      description: Describe likely risks and mitigations. If none are expected, explain why.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Identity resolution
+        - Search / information retrieval
+        - Frontend / mobile UX
+        - Trust & safety
+        - Privacy
+        - Security
+        - Accessibility
+        - Testing / tooling
+        - Documentation
+        - Other
+    validations:
+      required: true
